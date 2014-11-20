@@ -1,14 +1,28 @@
 <html>
   <head>
     <script type="text/javascript" src="js/vendors/underscore.min.js"></script>
+    <script type="text/javascript" src="js/vendors/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/helpers/randomize_helper.js"></script>
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/observer.js"></script>
     <script type="text/javascript" src="js/task.js"></script>
     <script type="text/javascript" src="js/worker.js"></script>
     <script type="text/javascript" src="js/work_process.js"></script>
+    <script type="text/javascript" src="js/task_repository.js"></script>
+    <script type="text/javascript" src="js/task_generator.js"></script>
+    <script type="text/javascript" src="js/worker_generator.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/test/common_test.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
+    <div class="current_tasks"></div>
+    <div class="head_hanting">
+      <button class="get_new_worker" data-worker-type='backend'>Find backend worker</button>
+      <button class="get_new_worker" data-worker-type='frontend'>Find frontend worker</button>
+      <button class="get_new_worker" data-worker-type='other'>Find other worker</button>
+      <div class="worker_card"></div>
+    </div>
   </body>
 </html>
